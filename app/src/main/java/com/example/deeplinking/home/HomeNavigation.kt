@@ -7,10 +7,6 @@ import androidx.navigation.compose.composable
 
 const val homeNavigationRoute = "home_route"
 
-fun NavController.navigateHomeScreen(navOptions: NavOptions? = null) {
-    this.navigate(homeNavigationRoute, navOptions)
-}
-
 fun NavGraphBuilder.homeScreen() {
     composable(
         route = homeNavigationRoute,
